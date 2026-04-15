@@ -25,9 +25,9 @@ STEP 5 - 텔레그램 전송 (Bash curl):
 URL: https://api.telegram.org/bot8550163156:AAEQYbsXM30m_PqUM4zG2qSqMK-Y9erWZt8/sendMessage
 3800자 이하로 청크 분할 전송.
 
-STEP 6 - Gmail 초안 생성 (gmail_create_draft MCP):
-수신: soonhak.ahn@gmail.com
-제목: [사회복지 뉴스레터] {날짜} {에디션}
-본문: /tmp/newsletter.txt 전체 내용
+STEP 6 - 결과 출력: 아래 형식으로 정확히 출력하세요 (쉘 스크립트가 파싱합니다).
+NEWSLETTER_FILE=/tmp/newsletter.txt
+TELEGRAM_STATUS=OK  # 텔레그램 전송 성공 시 OK, 실패 시 FAIL
+EDITION=저녁  # 또는 아침
 
 모든 단계를 반드시 완료하세요.
