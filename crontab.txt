@@ -1,0 +1,11 @@
+# ============================================================
+# 사회복지 뉴스레터 크론 설정
+# 설치 방법: crontab crontab.txt
+#   또는:    crontab -e  →  아래 두 줄 붙여넣기
+# ============================================================
+
+# 아침 에디션 ☀️  — UTC 22:00 = KST 07:00
+0 22 * * * /home/user/claude_01_wellfare_news/run_newsletter.sh
+
+# 저녁 에디션 🌙  — UTC 10:00 = KST 19:00
+0 10 * * * /home/user/claude_01_wellfare_news/run_newsletter.sh
